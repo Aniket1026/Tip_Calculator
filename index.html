@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+        <div class="logo"> <img src="./images/logo.svg" alt="logo"></div>
+        <div class="card">
+          <div class="card_left">
+            <div class="card_left_container">
+              <div class="bill_input">
+                <span> Bill </span>
+                <div class="bill">
+                  <img src="./images/icon-dollar.svg" alt="..." class="logo_dollar" />
+                  <input type="number" placeholder="0" min="0" dir="rtl" id="bill_input" />
+                </div>
+              </div>
+              <div class="number_of_people">
+                <div class="amount">
+                  <div class="count_people">Number Of People</div>
+                  <img src="./images/icon-person.svg" alt="..." class="person_logo" />
+                  <input type="number" placeholder="0" id="number_of_people" dir="rtl" />
+                </div>
+              </div>
+              <div class="tip_selector">
+                <span> Select Tip %</span>
+                <div class="tip_buttons">
+                  <div class="f3_buttons">
+                    <button class="buttons">5%</button>
+                    <button class="buttons">10%</button>
+                    <button class="buttons active">15%</button>
+                  </div>
+                  <div class="l3_buttons">
+                    <button class="buttons">25</button>
+                    <button class="buttons">50%</button>
+                    <input type="number" id="custom" placeholder="custom" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card_right_container">
+            <div class="card_right">
+              <div class="card_right_upper_content">
+                <div class="card_right_upper_content_individual_container">
+                  <div class="tip_amount_container">
+                    <h4>Tip Amount</h4>
+
+                    <div class="person">/person</div>
+                  </div>
+                  <div id="tip_amount">$ 0.00</div>
+                </div>
+                <div class="card_right_upper_content_individual_container">
+                  <div class="tip_amount_container">
+                    <h4 class="Total">Total</h4>
+
+                    <div class="person">/person</div>
+                  </div>
+                  <div id="bill_total">$ 0.00</div>
+                </div>
+              </div>
+              <div class="card_right_lower_content">
+                <button class="reset">Reset</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </main>
+  <script src="./Script/app.js"></script>
+</body>
+</html>
